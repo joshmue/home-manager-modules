@@ -4,7 +4,7 @@
   options.style = {
     theme = lib.mkOption {
       type = lib.types.str;
-      default = "tokyo-night-terminal-dark";
+      default = "github-dark";
       description = "theme name";
     };
   };
