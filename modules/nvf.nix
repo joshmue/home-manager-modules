@@ -42,7 +42,10 @@
       ];
 
       statusline.lualine.enable = true;
-      terminal.toggleterm.lazygit.enable = true;
+      terminal.toggleterm = {
+        enable = true;
+        lazygit.enable = true;
+      };
       binds.whichKey.enable = true;
       utility.oil-nvim.enable = true;
       git.gitsigns.enable = true;
