@@ -41,6 +41,7 @@
         { mode = "n"; key = "<leader>sS";      action = "<cmd>FzfLua lsp_live_workspace_symbols<cr>"; desc = "Workspace Symbols"; }
       ];
 
+      lineNumberMode = "number";
       statusline.lualine.enable = true;
       terminal.toggleterm = {
         enable = true;
