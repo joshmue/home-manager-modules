@@ -39,6 +39,18 @@
         { mode = "n"; key = "gy";              action = "<cmd>FzfLua lsp_typedefs<cr>";         desc = "Goto Type Definition"; }
         { mode = "n"; key = "<leader>ss";      action = "<cmd>FzfLua lsp_document_symbols<cr>"; desc = "Document Symbols"; }
         { mode = "n"; key = "<leader>sS";      action = "<cmd>FzfLua lsp_live_workspace_symbols<cr>"; desc = "Workspace Symbols"; }
+
+        {
+          mode = "n";
+          key = "<leader>e";
+          lua = true;
+          desc = "Mini Files";
+          action = ''
+            function()
+              MiniFiles.open(vim.api.nvim_buf_get_name(0))
+            end
+          '';
+         }
       ];
 
       lineNumberMode = "number";
@@ -48,7 +60,6 @@
         lazygit.enable = true;
       };
       binds.whichKey.enable = true;
-      utility.oil-nvim.enable = true;
       git.gitsigns.enable = true;
       ui.noice.enable = true;
       tabline.nvimBufferline = {
@@ -64,6 +75,7 @@
         };
       };
       fzf-lua.enable = true;
+      mini.files.enable = true;
     };
   };
 }
