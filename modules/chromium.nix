@@ -16,6 +16,9 @@
         {
           id = "ddkjiahejlhfcafbddmgiahcphecmpfh"; # ublock origin lite
         }
+        {
+          id = "dbepggeogbaibhgnhhndojpepiihcmeb"; # vimium
+        }
       ];
     };
   };
