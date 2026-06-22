@@ -54,7 +54,21 @@
       ];
 
       lineNumberMode = "number";
-      statusline.lualine.enable = true;
+      statusline.lualine = {
+        enable = true;
+        sectionSeparator = {
+          left = "";
+          right = "";
+        };
+        activeSection = {
+          a = [ ''{"mode"}'' ];
+          b = [ ''{"filetype", icon_only = true}'' ''{"filename"}'' ];
+          c = [ ''{"diff"}'' ];
+          x = [ ];
+          y = [ ''{"searchcount"}'' ''{"branch"}'' ];
+          z = [ ''{"location"}'' ];
+        };
+      };
       terminal.toggleterm = {
         enable = true;
         lazygit.enable = true;
