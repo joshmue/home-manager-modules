@@ -90,6 +90,18 @@
       };
       fzf-lua.enable = true;
       mini.files.enable = true;
+      autocomplete.nvim-cmp = {
+        enable = true;
+        sourcePlugins = [
+          pkgs.vimPlugins.cmp-nvim-lsp
+        ];
+        sources = {
+          nvim-cmp = null;
+          buffer = "[Buffer]";
+          path = "[Path]";
+          nvim_lsp = "[LSP]";
+        };
+      };
     };
   };
 }
