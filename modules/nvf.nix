@@ -54,6 +54,10 @@
       ];
 
       lineNumberMode = "number";
+      luaConfigRC.clipboard = ''
+        vim.g.clipboard = "osc52"
+        vim.o.clipboard = "unnamed,unnamedplus"
+      '';
       statusline.lualine = {
         enable = true;
         sectionSeparator = {
