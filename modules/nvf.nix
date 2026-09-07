@@ -60,17 +60,17 @@
       '';
       statusline.lualine = {
         enable = true;
-        sectionSeparator = {
+        setupOpts.sectionSeparator = {
           left = "";
           right = "";
         };
-        activeSection = {
-          a = [ ''{"mode"}'' ];
-          b = [ ''{"filetype", icon_only = true}'' ''{"filename"}'' ];
-          c = [ ''{"diff"}'' ];
-          x = [ ];
-          y = [ ''{"searchcount"}'' ''{"branch"}'' ];
-          z = [ ''{"location"}'' ];
+        setupOpts.sections = {
+          lualine_a = [ ''{"mode"}'' ];
+          lualine_b = [ ''{"filetype", icon_only = true}'' ''{"filename"}'' ];
+          lualine_c = [ ''{"diff"}'' ];
+          lualine_x = [ ];
+          lualine_y = [ ''{"searchcount"}'' ''{"branch"}'' ];
+          lualine_z = [ ''{"location"}'' ];
         };
       };
       terminal.toggleterm = {
